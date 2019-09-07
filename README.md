@@ -58,12 +58,12 @@ The "filetype" field sets the expected file extension for the photo frames.
 	to apply deflickering, 'false' for no application of deflickering. Note that
 	the first time you perform a deflickering analysis it may add significant
 	processing time. Information is then stored in a file named "brightness_orig_frames.csv,"
-	contained within the project directory, which speeds processing on subsequent runs.
+	contained within the project directory, which speeds processing time on subsequent runs.
 	"df_window" indicates the width of a window, in frames, used to calculate
 	mean brightness of frames over time to apply deflickering.
 
 ### Brightness Keyframes:
-In the above example proj_config.json file, "bright" is set to 'null,' indicating
+In the above example "proj_config.json" file, "bright" is set to 'null,' indicating
 	no desired change in brightness. One can alter the overall brightness of all frames
 	by setting "bright" to a value which multiplicatively alters the brightness of the scene,
 	i.e. 1.0 indicates no change, 2.0 is twice as bright, 0.5 is half as bright.
@@ -81,7 +81,7 @@ You can also enter an array of brightness "keyframes" that change the value
 		[index2, brightness2] 
 		]
 ``` 
-Not that negative indices can be used, with -1 indicating the final frame. As an
+Note that negative indices can be used, with -1 indicating the final frame. As an
 	example, if you had a time lapse of a sunset and wanted to darken the beginning of 
 	the scene and brighten the ending of the scene, with a smooth transition between them,
 	you might try the following:
@@ -95,11 +95,11 @@ Not that negative indices can be used, with -1 indicating the final frame. As an
 ### Cropping Keyframes:
 The "crop" field works much the same way as the "bright" field. If "crop" is set to
 	'null,' the program automatically crops the photos (letterbox style) to match the 
-	output video size. A single crop value can be set in the following format:
+	output video size. A single crop value can be manually set in the "proj_config.json" file in the following format:
 ```
 	"crop" : [x, y, X, Y]
 ```
-where (x,y) is are the coordinates of the upper left corner and (X,Y) those of the 
+where (x,y) are the coordinates of the upper left corner and (X,Y) those of the 
 	lower right corner of the crop. NOTE: the practitioner is responsible for getting the aspect ratio correct, otherwise
 	distortion may occur. Crop keyframe values can also be set by introducing the
 	keyframe indices at the beginning of the row for each set of crop values:
