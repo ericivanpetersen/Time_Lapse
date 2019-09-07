@@ -15,7 +15,7 @@ Python application used to process photographic
 ## How to:
 
 ### Basic Project Setup:
-	First, create a project directory with the following structure:
+First, create a project directory with the following structure:
 ```
 /{project_name}/
 |	proj_config.json
