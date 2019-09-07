@@ -1,0 +1,11 @@
+
+{ 
+	"filetype" : "JPG",
+	"size" : [1920, 1080],
+	"frame_rate" : 30,
+	"bit_rate" : "10000k",
+	"deflicker" : false,
+	"df_window" : 15,
+	"bright" : null,
+	"crop" : null
+}

@@ -262,8 +262,8 @@ def main(project_path):
 	# Intro Text:
 	print("----------------------------------------------")
 	print("Render Time Lapse (or Stop Motion) Video, a Python App")
-	print("    Developed by Eric Ivan Petersen")
-	print("    September 7, 2019")
+	print("    Developed by Eric Ivan Petersen, September 7, 2019")
+	print("    Contact: erictheredbaron@gmail.com")
 	print("    Last updated September 7, 2019")
 	print("----------------------------------------------")
 	print()
