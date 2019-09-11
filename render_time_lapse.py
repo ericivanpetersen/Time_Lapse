@@ -245,7 +245,7 @@ class time_lapse(object):
 		command = 'ffmpeg -f image2 -r ' + str(self.fr) + ' -i ' + self.projpath + 'rendered_frames/frame-%05d.jpg -b:v ' + self.br + ' -y ' + self.projpath + 'rendered_video.mp4'
 		
 		print(command)
-
+		print()
 		os.system(command) # Run ffmpeg command
 
 def main(project_path):
