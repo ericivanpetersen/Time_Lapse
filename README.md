@@ -1,4 +1,4 @@
-# "render_time_lapse.py"
+# "render_time_lapse"
 
 ## Description: 
 Python application used to process photographic
@@ -121,7 +121,7 @@ As an example, the following set of crop keyframes produces a "Ken Burns" effect
 Once you have your "proj_config.json" file configured the way you want and your
 	frames in the appropriate directory, you can render your video using the following command:
 ```
-python render_time_lapse.py {project_directory}
+python render_time_lapse {project_directory}
 ```
 Edited photo frames will be placed in {project_directory}/rendered_frames/ and the
 	final video will be saved to {project_directory}/rendered_video.mp4 in the
